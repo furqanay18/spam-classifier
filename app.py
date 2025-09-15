@@ -18,6 +18,7 @@ with open("spam_model.pkl", "rb") as f:
 
 # Make sure NLTK resources are available
 nltk.download('punkt')
+nltk.download('punkt_tab')   # 👈 Added this line
 nltk.download('stopwords')
 
 # -----------------------------
@@ -61,5 +62,3 @@ def predict():
 # Run Flask app
 if __name__ == "__main__":
     app.run(debug=True)
-
-    
